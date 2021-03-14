@@ -22,7 +22,7 @@ h1 {
   color: white;
   text-align: center;
   margin-top: 3px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Roboto Mono', monospace;
   padding-top: 5%;
 }
 .editor {
