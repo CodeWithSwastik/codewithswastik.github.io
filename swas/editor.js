@@ -12,7 +12,7 @@ let editorLib = {
     // Configure Ace
 
     // Theme
-    codeEditor.setTheme("ace/theme/monokai");
+    codeEditor.setTheme("ace/theme/dracula");
 
     // Set language
     codeEditor.session.setMode("ace/mode/python");
@@ -33,6 +33,7 @@ executeCodeBtn.addEventListener("click", () => {
 
   console.log(url);
   console_.innerText = "Processing....";
+  
   try {
     fetch(url)
       .then((response) => response.json())
