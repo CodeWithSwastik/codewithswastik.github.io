@@ -1,7 +1,7 @@
 /* Variables */
 :root {
-  --editor-bg: #41423d;
-  --editor-border: white;
+  --editor-bg: #222336;
+  --editor-border: #53576E;
 }
 
 /* Reset Styles */
@@ -9,24 +9,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  background: black;
+  background: hsla(237, 23%, 17%, 1);
+  background: linear-gradient(90deg, hsla(237, 23%, 17%, 1) 0%, hsla(294, 17%, 44%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(237, 23%, 17%, 1) 0%, hsla(294, 17%, 44%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(237, 23%, 17%, 1) 0%, hsla(294, 17%, 44%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#222336", endColorstr="#7F5D83", GradientType=1 );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
   color: white;
   text-align: center;
   margin-top: 3px;
-  font-family: 'Roboto Mono', monospace;
   padding-top: 5%;
 }
 .editor {
-  height: 90%;
+  height: 95%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -43,6 +51,7 @@ h1 {
   padding: 2em;
   border-radius: 3px;
   border: 1px solid #ccc;
+  box-shadow: 0 0 5px #9ecaed;
 }
 
 .editor__body {
@@ -67,20 +76,20 @@ h1 {
 .editor__btn {
   border: 0;
   padding: 0.5em;
-  background-color: #f92672;
-  border: 2px solid white;
-  margin-top: 1em;
-  width: 100px;
+  background-color: #13141F;
+  margin-top: 1.8em;
+  width: 80px;
+  box-shadow: 0 0 6px #9ecaed;
   cursor: pointer;
   color: white;
+  font-size: 17px;
 }
 
 .editor__console {
-  background-color: #272822;
+  background-color: #16141F;
   width: 100%;
-  height: 130px;
-  margin-top: 0.9em;
-  border: 1px solid var(--editor-border);
+  height: 140px;
+  margin-top: 1.2em;;
   overflow: auto;
   color: white;
 }
