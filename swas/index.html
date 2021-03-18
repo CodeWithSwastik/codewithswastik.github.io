@@ -11,7 +11,7 @@
 
   <body>
     <div>
-      <h1>Swas Lang v1.8.3</h1>
+      <h1 id="heading">Swas Lang</h1>
     </div>
     <div class="editor">
       <div class="editor__wrapper">
@@ -33,5 +33,11 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
     <script src="editor.js"></script>
+    <script>
+      head = document.getElementById("heading");
+      fetch("https://swas.vercel.app/api/version")
+        .then((response) => response.json())
+        .then((data) => (head.innerText = "Swas Lang v" + data["version"]));
+    </script>
   </body>
 </html>
