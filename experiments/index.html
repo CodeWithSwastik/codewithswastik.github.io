@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swas.py</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+    body {
+      background: black;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #scene {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #scene img {
+      position: absolute;
+      top: 0;
+      left: -2%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-size: 10rem;
+      z-index: 1;
+      transition: 0.5s;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    h2:hover {
+      transform: scale(1.1);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="scene">
+        <h2><a href="/">Swas.py</a></h2>
+
+        <img src="img/1.png" data-speed="-6" />
+        <img src="img/2.png" data-speed="-3" />
+        <img src="img/3.png" data-speed="4" />
+        <img src="img/4.png" data-speed="6" />
+        <img src="img/5.png" data-speed="4" />
+        <img src="img/6.png" data-speed="7" />
+        <img src="img/7.png" data-speed="-5" />
+        <img src="img/8.png" data-speed="-3" />
+        <img src="img/9.png" data-speed="-5" />
+        <img src="img/10.png" data-speed="-3" />
+        <img src="img/11.png" data-speed="-6" />
+        <img src="img/12.png" data-speed="7" />
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        document.querySelectorAll("img").forEach((img) => {
+          const speed = img.getAttribute("data-speed");
+          const x = (window.innerWidth - e.pageX * speed) / 100;
+          const y = (window.innerHeight - e.pageY * speed) / 100;
+          img.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+      });
+    </script>
+  </body>
+</html>
