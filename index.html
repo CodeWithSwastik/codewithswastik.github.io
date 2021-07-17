@@ -1,102 +1,211 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>Swas.py</title>
-  <meta name="description" content="Click here and try to find the easter eggs ;)"/>
-  <meta content="#43B581" name="theme-color">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swas.py</title>
 
-  <style>
-  body, html {
-    height: 100%;
-    margin: 0;
-  }
+    <!-- Open graph -->
+    <meta name="description" content="Hey there 👋 Make sure to check out my portfolio here."/>
+    <meta content="#9affe1" name="theme-color">
 
-  .bgimg {
-    background-color: black;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-  }
+    <!-- Particles js and Typed js -->
+    <script src="./particles.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  .topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-  }
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css">
 
-  .bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-  }
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
-  .middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+    <!-- Animate.css -->
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
 
-  hr {
-    margin: auto;
-    width: 40%;
-  }
-  </style>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+    <!-- Icons -->
+    <!-- <link rel="icon" href="./favicon.ico"> -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+   
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Swas.py</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#resume" class="navbar__links" id="resume-page">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#stack" class="navbar__links" id="stack-page">Tech Stack</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Landing -->
+    <div class="container">
+        <div id="particles-js"></div>
+        <section class="home__section" id="home">  
+            
+            <h1>
+                Hi! I'm Swas.py
+            </h1>
+            <p>
+                I'm a <span class='typing'></span>
+            </p>
 
-  <head>
-
-  <body>
-
-  <div class="bgimg" id = "everything">
-    <div class="topleft">
+            <div class="social__icons">
+                <a href=https://youtube.com/c/codewithswastik class="icons" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+                <a href=https://github.com/codewithswastik class="icons" target="_blank"> <i class="fab fa-github fa-3x"></i></a>
+                <a href=mailto:codewithswastik@gmail.com class="icons" target="_blank"><i class="fa fa-envelope fa-3x" ></i></a>
+                <a href=https://www.twitter.com/codewithswastik class="icons" target="_blank"><i class="fab fa-twitter fa-3x" ></i></a>
+            </div>
+        </section>
+        
     </div>
-    <div class="middle">
-      <a onclick="lol()" style="cursor: pointer; cursor: hand;">
-        <h1 id = "commingsoon" onclick=""></h1><a>
-      <hr>
-      <p id="demo" style="font-size:30px"></p>
+
+    <!-- About -->
+    <section class="about__section" id="about"> 
+        <div class="about__container">
+            <div class="about__card">
+                <h1>
+                    <i class="fas fa-paint-brush"></i>
+                    About Me
+                </h1>
+                <br>
+                <p> Hi, I'm Swastik aka Swas.py! 👋 <p> <br>
+                <p>
+                    I am a 16 year old interested in web development. I make youtube videos which are mainly focused on discord.py but also sometimes on web development. I also make discord bots. <br><br>
+                </p>
+                <p>I am the founder of <a href='https://devbio.me' target='_blank'>devbio.me</a>, a place where developers can create customizable short bios and be able to share them. I am also the owner of a discord server with about 5000 members: <a href='https://discord.gg/TXF3hBj' target='_blank'>The Coding Academy</a>, in which I am very active.<br>
+                    <br>
+                </p>
+                <p>
+                    In my free time I enjoy playing chess, solving CTF's and Treasure hunts, and learning math. 
+                </p>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="resume__section" id="resume">
+        <div class="toggle__bar">
+            <button class="toggle__btn  active__btn" id="prj__btn"><h1>Projects</h1></button>
+
+            <button class="toggle__btn" id="exp__btn"><h1>Experience</h1></button>
+        </div>
+
+        <div class="resume__container">
+            <div class="timeline" id="projects">
+                <ul>
+                    <li>
+                        <div class="timeline__content">
+                            <h3 class="date">2021 - Present</h3>
+                            <h1><a href='https://devbio.me' target="_blank">devbio.me</a></h1>
+                            <p> A place where developers can create customizable bios and be able toget discovered.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline__content">
+                            <h3 class="date">2021 - Present</h3>
+                            <h1><a href='https://github.com/CodeWithSwastik/swas' target="_blank">Swas Lang</a></h1>
+                            <p> A programming language made for fun, written in python.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline__content">
+                            <h3 class="date">2021 - Present</h3>
+                            <h1><a href='https://github.com/CodeWithSwastik/discord-lib' target="_blank">discord-lib</a></h1>
+                            <p>discord-lib is a python library which allows discord bots to be written in JSON, XML and yaml.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline noshow" id="experience">
+                <ul>
+                    <li>
+                        <div class="timeline__content">
+                            <h3 class="date">2021 - Present</h3>
+                            <h1>Web developement</h1>
+                            <p>React, Svelte</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline__content">
+                            <h3 class="date">2020 - Present</h3>
+                            <h1>Discord Bot developement </h1>
+                            <p>Python, discord.py</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline__content">
+                            <h3 class="date">2019 - 2020</h3>
+                            <h1>Robotics</h1>
+                            <p>Arduino, C++</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </section>
+
+    <!-- Stack -->
+    <section class="tech__section" id="stack">
+       <div class="tech__container">
+           <h1>Languages</h1>
+            <ul class="tech__icons">
+
+                <li class="icon__item"><i class="devicon-python-plain-wordmark"></i></li>
+                <li class="icon__item"><i class="devicon-html5-plain-wordmark"></i></li>
+                <li class="icon__item"><i class="devicon-css3-plain-wordmark"></i></li>
+                <li class="icon__item"><i class="devicon-javascript-plain"></i></li>
+            </ul>
+       </div>
+    <div class="tech__container">
+        <h1>Frameworks, Tools and Technologies</h1>
+        <ul class="tech__icons">
+            <li class="icon__item"><i class="devicon-react-original"></i></li>
+            <li class="icon__item"><i class="devicon-postgresql-plain-wordmark"></i></li>
+            <li class="icon__item svelte"><span class="iconify" data-icon="simple-icons:svelte" data-inline="false"></span></li>
+            <li class="icon__item"><i class="devicon-git-plain-wordmark"></i></li>
+            <li class="icon__item"><i class="devicon-photoshop-plain"></i></li>
+            <li class="icon__item"><i class="devicon-vscode-plain"></i></li>
+        </ul>
     </div>
-    <div class="bottomleft">
-      <p>Swas.py <div id="edit" contenteditable="true"></div></p>
-    </div>
-  </div>
+    </section>
 
-  <script>
+    <!-- Footer  -->
+    <footer class="sticky__footer">
+        <p>Made with <span class="heart">&#x2764;</span> by Swas.py </p>  
+    </footer>
 
-  var countDownDate = new Date("July 20, 2021 00:00:00").getTime();
-
-  var countdownfunction = setInterval(function() {
-
-    var now = new Date().getTime();
-    
-    var distance = countDownDate - now;
-    
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    if (distance < 0) {
-      clearInterval(countdownfunction);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-  }, 1000);
-
-
-var _0xf3dc=["\x43\x4F\x4D\x49\x4E\x47\x20\x53\x4F\x4F\x4E\x2E\x2E\x2E","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x63\x6F\x6D\x6D\x69\x6E\x67\x73\x6F\x6F\x6E","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x79\x6F\x75\x74\x75\x62\x65\x2E\x63\x6F\x6D\x2F\x77\x61\x74\x63\x68\x3F\x76\x3D\x51\x74\x42\x44\x4C\x38\x45\x69\x4E\x5A\x6F","\x6C\x65\x6E\x67\x74\x68","\x63\x68\x61\x72\x41\x74","\x65\x64\x69\x74","\x73\x6C\x69\x63\x65","\x6C\x69\x73\x74\x65\x6E","\x75\x70\x2C\x72\x69\x67\x68\x74\x2C\x64\x6F\x77\x6E\x2C\x6C\x65\x66\x74","\x50\x6F\x67\x20\x43\x68\x61\x6D\x70\x21\x20\x59\x6F\x75\x20\x64\x69\x73\x63\x6F\x76\x65\x72\x65\x64\x20\x61\x6E\x20\x65\x61\x73\x74\x65\x72\x20\x65\x67\x67\x21","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x43\x6F\x6C\x6F\x72","\x73\x74\x79\x6C\x65","\x65\x76\x65\x72\x79\x74\x68\x69\x6E\x67","\x23","\x61\x64\x64\x43\x6F\x64\x65","\x75\x70\x2C\x75\x70\x2C\x64\x6F\x77\x6E\x2C\x64\x6F\x77\x6E\x2C\x6C\x65\x66\x74\x2C\x72\x69\x67\x68\x74\x2C\x6C\x65\x66\x74\x2C\x72\x69\x67\x68\x74","\x56\x65\x72\x79\x20\x6E\x69\x63\x65\x21\x20\x43\x6C\x69\x63\x6B\x20\x6F\x6B\x20\x61\x6E\x64\x20\x73\x65\x65\x20\x77\x68\x61\x74\x20\x61\x6C\x6C\x20\x63\x68\x61\x6E\x67\x65\x64\x21","\x59\x6F\x75\x20\x63\x61\x6E\x20\x65\x64\x69\x74\x20\x74\x68\x69\x73\x20\x74\x65\x78\x74\x21\x20\x41\x66\x74\x65\x72\x20\x63\x68\x61\x6E\x67\x69\x6E\x67\x20\x74\x68\x69\x73\x20\x63\x6C\x69\x63\x6B\x20\x74\x68\x65\x20\x63\x6F\x6D\x6D\x69\x6E\x67\x20\x73\x6F\x6F\x6E\x2E\x2E\x2E","\x64\x69\x73\x70\x6C\x61\x79","\x6E\x6F\x6E\x65","\x62\x6C\x6F\x63\x6B"];var txt=_0xf3dc[0];var executed=0;function lol(){document[_0xf3dc[3]](_0xf3dc[2])[_0xf3dc[1]]= _0xf3dc[4];omg();var _0xab91x4=0;executed+= 1;if(executed>= 6.9){window[_0xf3dc[6]][_0xf3dc[5]]= _0xf3dc[7]};var _0xab91x5=setInterval(function(){if(_0xab91x4< txt[_0xf3dc[8]]){document[_0xf3dc[3]](_0xf3dc[2])[_0xf3dc[1]]+= txt[_0xf3dc[9]](_0xab91x4);_0xab91x4++}else {clearInterval(_0xab91x5)}},50)}function omg(){var _0xab91x7=document[_0xf3dc[3]](_0xf3dc[10])[_0xf3dc[1]];if(_0xab91x7!== _0xf3dc[4]){if(_0xab91x7[_0xf3dc[8]]< 60){txt= _0xab91x7}else {txt= _0xab91x7[_0xf3dc[11]](0,60)}}}lol();var egg= new Egg();egg[_0xf3dc[21]](_0xf3dc[13],function(){alert(_0xf3dc[14]);var _0xab91x4=0;var _0xab91x5=setInterval(function(){if(_0xab91x4< 42){const _0xab91x9=Math[_0xf3dc[16]](Math[_0xf3dc[15]]()* 16777215).toString(16);document[_0xf3dc[3]](_0xf3dc[19])[_0xf3dc[18]][_0xf3dc[17]]= _0xf3dc[20]+ _0xab91x9;_0xab91x4++}else {clearInterval(_0xab91x5)}},2500)})[_0xf3dc[12]]();egg[_0xf3dc[21]](_0xf3dc[22],function(){alert(_0xf3dc[23]);executed=  -420;toggleHide();document[_0xf3dc[3]](_0xf3dc[10])[_0xf3dc[1]]= _0xf3dc[24]})[_0xf3dc[12]]();function toggleHide(){var _0xab91x7=document[_0xf3dc[3]](_0xf3dc[10]);if(_0xab91x7[_0xf3dc[18]][_0xf3dc[25]]=== _0xf3dc[26]){_0xab91x7[_0xf3dc[18]][_0xf3dc[25]]= _0xf3dc[27]}else {_0xab91x7[_0xf3dc[18]][_0xf3dc[25]]= _0xf3dc[26]}}toggleHide()
-
-
-  </script>
-
-  </body>
+       <script>
+            // particle.js config
+            /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+            particlesJS.load('particles-js', 'particlesjs-config.json', () => {
+                console.log('Particles.js config loaded!');
+            });
+       </script>
+    <script src="./main.js"></script>
+</body>
 </html>
