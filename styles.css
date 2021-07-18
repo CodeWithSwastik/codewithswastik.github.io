@@ -4,11 +4,14 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+}
+
+:root {
   --main-accent: #9affe1;
   --main-bg: #111111;
   --darker-bg: #151515;
+  --secondary: #6bfaff;
 }
-
 /* Scrollbar */
 body::-webkit-scrollbar {
   background-color: var(--darker-bg);
@@ -224,7 +227,7 @@ a {
 }
 
 .home__section h1:hover {
-  opacity: 80%;
+  color: var(--main-accent);
   transform: translateX(-15px);
   letter-spacing: -1px;
   cursor: pointer;
