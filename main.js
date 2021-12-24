@@ -24,12 +24,25 @@ const themes = [
 const root = document.querySelector(":root");
 const themeToggle = document.querySelector("#main-name");
 let currentTheme = 0;
-themeToggle.addEventListener("click", () => {
+
+const changeTheme = () => {
   currentTheme++;
   if (currentTheme == themes.length) {
     currentTheme = 0;
   }
   root.style.setProperty("--main-accent", themes[currentTheme]);
+};
+themeToggle.addEventListener("click", () => {
+  changeTheme();
+});
+
+let scrolling = false;
+window.addEventListener("scroll", () => {
+  if (!scrolling) {
+    changeTheme();
+    scrolling = true;
+    setTimeout(() => (scrolling = false), 5000);
+  }
 });
 
 const hamburger = document.querySelector("#mobile-menu");
