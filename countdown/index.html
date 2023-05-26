@@ -69,8 +69,16 @@
   </div>
 
   <script>
+  var currentDate = new Date();
+  var targetDate;
 
-  var countDownDate = new Date("July 20, 2022 00:00:00").getTime();
+  if (currentDate.getMonth() < 6 || (currentDate.getMonth() === 6 && currentDate.getDate() < 20)) {
+    targetDate = new Date(currentDate.getFullYear(), 6, 20, 0, 0, 0);
+  } else {
+    targetDate = new Date(currentDate.getFullYear() + 1, 6, 20, 0, 0, 0);
+  }
+
+  var countDownDate = targetDate.getTime();
 
   var countdownfunction = setInterval(function() {
 
